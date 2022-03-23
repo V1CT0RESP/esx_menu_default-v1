@@ -1,0 +1,126 @@
+@font-face {
+	font-family: font3;
+	src: url('../fonts/BlankRiver.ttf');
+}
+
+@font-face {
+	font-family: segoeui;
+	src: url('../fonts/segoeui.ttf');
+}
+
+@font-face {
+	font-family: gotham;
+	src: url('../fonts/BoxedRound.ttf');
+}
+
+body{
+	overflow:hidden;
+}
+
+.menu {
+	background-color: transparent;
+	font-family: gotham;
+	min-width: 350px;
+	box-shadow: 0px 0px 3px 3px rgb(0, 0, 0);
+	position: absolute;
+	overflow: hidden;
+	padding: 15px 15px;
+	background-color: rgba(0, 0, 0, 0.658);
+}
+
+.menu.align-left,.menu.align-top-left,.menu.align-top,.menu.align-top-right, .menu.align-right,.menu.align-bottom-right, .menu.align-bottom,.menu.align-bottom-left,.menu.align-center {
+	right: 10px;
+	bottom: 90;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.menu .head {
+	width: auto;
+	vertical-align: middle;
+	border-top-left-radius: 10px;
+	color: rgba(255, 255, 255, 0);
+	padding-bottom: 20px;
+}
+.menu .head span{
+	color: rgb(186, 17, 192);
+	font-weight: bold;
+}
+.menu .head hr{
+	margin: 4px 0;
+}
+
+.menu .headtitle {
+    color: rgb(255, 255, 255);
+	text-shadow: #00000000;
+	text-align: start;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.menu .headimageright {
+	position: absolute;
+	top: -52;
+	left:-35;
+	height: 100px;
+}
+.menu .menu-items{
+	max-height: 600px;
+	overflow-y: auto;
+}
+
+.menu .menu-items::-webkit-scrollbar {
+	width: 0.3em;
+	border-radius: 5px;
+}
+.menu .menu-items::-webkit-scrollbar-track {
+	background-color: transparent;
+	margin-left:0px;
+}
+.menu .menu-items::-webkit-scrollbar-thumb {
+	background-color: #ffffff00;
+	border-radius: 5px;
+}
+.menu .menu-items .menu-item {
+	border-radius: 5px;
+	padding: 7px 12px;
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+	border: 2px solid transparent;
+}
+.menu .menu-items .menu-item:not(:last-child){
+	margin-bottom:5px;
+}
+.menu .menu-items .menu-item.selected {
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255, 0.658);
+	color:black;
+	font-weight: bold;
+}
+
+.marker{
+    font-weight:bold;
+    display: inline-block;
+}
+
+.selected .marker{
+    animation:marker 0.5s ease-in-out infinite;
+}
+
+@keyframes marker {
+    0%{
+    transform: translateX(-3px);
+
+    }
+    50%{
+    transform: translateX(3px);
+        
+    }
+    100%{
+    transform: translateX(-3px);
+    
+    }
+}
+
