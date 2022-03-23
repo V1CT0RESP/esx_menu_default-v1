@@ -20,8 +20,7 @@ files {
 	'html/css/app.css',
 	'html/js/mustache.min.js',
 	'html/js/app.js',
-	'html/fonts/*.ttf',
-	'html/img/*.png'
+	'html/fonts/*.ttf'
 }
 
 dependencies {
